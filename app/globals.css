@@ -12,13 +12,36 @@ body {
   background: linear-gradient(to right, #ffffff, #caced2);
   /* scroll-behavior: smooth !important; */
 }
-
+body::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  transition: all 0.5s;
+  behavior: smooth !important;
+}
+body::-webkit-scrollbar-track {
+  background: #caced2;
+}
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #2769cb;
+}
 .introduction {
-  @apply flex xl:flex-row flex-col gap-8 relative z-0 max-w-[1440px] mx-auto;
+  @apply flex sm:px-1 px-6 xl:flex-row flex-col gap-8 relative z-0 max-w-[1440px] mx-auto;
 }
 .introduction__image-container {
-  @apply xl:flex-[1.2] flex justify-start items-start w-full xl:h-screen;
+  @apply xl:flex-[1.2] flex justify-end items-center w-full xl:h-screen ;
 }
 .introduction__title {
-  @apply md:text-[25px] mt-2 text-[14px] mb-3;
+  @apply md:text-[25px] text-[18px]  ;
+}
+.introduction__subtitle {
+  @apply text-[20px]  xl:text-[27px]  font-bold mt-5;
+}
+.introduction__image {
+  @apply relative xl:w-[50%] xl:ml-14 w-[90%] xl:h-full h-[380px] z-0;
+}
+.text__primary {
+  @apply text-[#0A88CE];
 }

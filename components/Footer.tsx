@@ -24,8 +24,8 @@ const Footer = () => {
             className="object-contain rotate-180 mr-1"
           />
         </button>
-        <p className="text-base text-gray-700">
-          .تمام حقوق اين وب‌سايت متعلق به پویا براری گلیرد است &copy;
+        <p className="text-base whitespace-nowrap text-gray-700">
+          تمام حقوق اين وب‌سايت متعلق به پویا براری گلیرد است. &copy;
         </p>
 
         <Link href={"/"} className="flex items-center">
