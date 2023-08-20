@@ -9,26 +9,12 @@ const Footer = () => {
   };
   return (
     <footer className="w-full flex flex-col text-black-100 mt-5 bg-white">
-      <div className="flex max-md:flex-col flex-wrap justify-between gap-4 sm:px-16 px-6 py-5">
-        <Link href={"/"} className="flex items-center">
-          <Image
-            src={"/logo.png"}
-            alt="logo"
-            width={26}
-            height={19}
-            className="object-contain mr-3"
-          />
-          <span className="self-center text-[15px] font-semibold whitespace-nowrap dark:text-white">
-            Pouya B.G
-          </span>
-        </Link>
-        <p className="text-base text-gray-700">
-          .تمام حقوق اين وب‌سايت متعلق به پویا براری گلیرد است &copy;
-        </p>
+      <div className="flex max-md:flex-col-reverse flex-wrap justify-between gap-4 items-center sm:px-16 px-6 py-5">
         <button
           onClick={handlTopScrool}
           className="flex justify-between items-center border rounded-md p-2"
         >
+          <>بازگشت به بالا</>
           <Image
             src={"/arrow-down.svg"}
             width={15}
@@ -37,8 +23,23 @@ const Footer = () => {
             alt="arrow"
             className="object-contain rotate-180 mr-1"
           />
-          <>بازگشت به بالا</>
         </button>
+        <p className="text-base text-gray-700">
+          .تمام حقوق اين وب‌سايت متعلق به پویا براری گلیرد است &copy;
+        </p>
+
+        <Link href={"/"} className="flex items-center">
+          <span className="self-center text-[15px] font-semibold whitespace-nowrap dark:text-white">
+            Pouya B.G
+          </span>
+          <Image
+            src={"/logo.png"}
+            alt="logo"
+            width={26}
+            height={19}
+            className="object-contain mr-3"
+          />
+        </Link>
       </div>
     </footer>
   );

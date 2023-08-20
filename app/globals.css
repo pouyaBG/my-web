@@ -12,3 +12,13 @@ body {
   background: linear-gradient(to right, #ffffff, #caced2);
   /* scroll-behavior: smooth !important; */
 }
+
+.introduction {
+  @apply flex xl:flex-row flex-col gap-8 relative z-0 max-w-[1440px] mx-auto;
+}
+.introduction__image-container {
+  @apply xl:flex-[1.2] flex justify-start items-start w-full xl:h-screen;
+}
+.introduction__title {
+  @apply md:text-[25px] mt-2 text-[14px] mb-3;
+}
