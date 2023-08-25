@@ -86,7 +86,7 @@ function Skill() {
                         <button className="cursor-pointer xl:text-[19px] xl:px-10 text-[16px] xl:py-3 py-[8px] px-5 bg-[#0A88CE] text-white rounded-[19px] mt-5 hover:shadow-xl bordr-1 hover:scale-105 border-[#0A88CE] transition-all ">دریاف رزومه</button>
                     </a>
                 </div>
-                <div className="w-screen h-8` bg-[#0A88CE] mt-10">
+                <div  data-aos="fade-right"  data-aos-duration="2100" className="w-screen h-8` bg-[#0A88CE] mt-10">
                     <div className="w-screen h-8 bg-black text-white flex justify-between px-10 -rotate-2 items-center">
                     </div>
                 </div>
