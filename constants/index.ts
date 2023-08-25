@@ -92,43 +92,7 @@ export const listCV = [
   },
 ];
 
-export const data = {
-  labels: [
-    "HTML&Css",
-    "JavaScript",
-    "React.js",
-    "Next.js",
-    "TypeScript",
-    "Tailwind",
-    "Git&GitHub",
-    "Sass",
-    "Rest Api",
-  ],
-  datasets: [
-    {
-      label: "Proficiency",
-      data: [95, 60, 80, 68, 40, 86, 94, 84, 90],
-      backgroundColor: "rgba(10,136,206,0.2)",
-      borderColor: "rgba(10,136,206,0.5)",
-      borderWidth: 2,
-    },
-  ],
-};
 
-export const optionsRadar = {
-  scales: {
-    r: {
-      suggestedMin: 0,
-      suggestedMax: 100,
-      angleLines: { color: "rgba(0, 0, 0, 0.2)" },
-      grid: { color: "rgba(0, 0, 0, 0.1)" },
-      pointLabels: { fontSize: 40 },
-    },
-  },
-  plugins: {
-    legend: { display: true },
-  },
-};
 
 export const workSamplesPhoto = [
   {
