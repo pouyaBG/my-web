@@ -45,3 +45,65 @@ body::-webkit-scrollbar-thumb:hover {
 .text__primary {
   @apply text-[#0A88CE];
 }
+
+
+
+.cv-timeline-container ul li {
+  position: relative;
+  margin-right: 30px;
+  padding: 14px;
+  border-radius: 6px;
+}
+.cv-timeline-container span.number {
+  height: 100%;
+}
+
+.cv-timeline-container ul li > span {
+  width: 2px;
+  height: 80%;
+  background: #fff;
+  right: -32px;
+  top: 0;
+  position: absolute;
+}
+.cv-timeline-container span.number span:first-child {
+  top: -5%;
+}
+.cv-timeline-container span.number span:last-child {
+  top: 96%;
+}
+.cv-timeline-container span.number span {
+  position: absolute;
+  font-size: 10px;
+  right: -35px;
+  font-weight: 700;
+}
+
+li > span:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  background: #0a88ce;
+  right: -3px;
+  top: 0;
+}
+
+.cv-timeline-container ul li > span:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  background: #0a88ce;
+  right: -3px;
+  top: 100%;
+}
+
+.cv-timeline-container ul li {
+  position: relative;
+  margin-right: 80px;
+  padding: 14px;
+  border-radius: 6px;
+}
