@@ -93,13 +93,23 @@ export const listCV = [
 ];
 
 export const data = {
-  labels: ['HTML&Css', 'JavaScript', 'React.js', 'Next.js', 'TypeScript', 'Tailwind', 'Git&GitHub', 'Sass', "Rest Api"],
+  labels: [
+    "HTML&Css",
+    "JavaScript",
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Tailwind",
+    "Git&GitHub",
+    "Sass",
+    "Rest Api",
+  ],
   datasets: [
     {
-      label: 'Proficiency',
+      label: "Proficiency",
       data: [95, 60, 80, 68, 40, 86, 94, 84, 90],
-      backgroundColor: 'rgba(10,136,206,0.2)',
-      borderColor: 'rgba(10,136,206,0.5)',
+      backgroundColor: "rgba(10,136,206,0.2)",
+      borderColor: "rgba(10,136,206,0.5)",
       borderWidth: 2,
     },
   ],
@@ -110,8 +120,8 @@ export const optionsRadar = {
     r: {
       suggestedMin: 0,
       suggestedMax: 100,
-      angleLines: { color: 'rgba(0, 0, 0, 0.2)' },
-      grid: { color: 'rgba(0, 0, 0, 0.1)' },
+      angleLines: { color: "rgba(0, 0, 0, 0.2)" },
+      grid: { color: "rgba(0, 0, 0, 0.1)" },
       pointLabels: { fontSize: 40 },
     },
   },
@@ -119,3 +129,28 @@ export const optionsRadar = {
     legend: { display: true },
   },
 };
+
+export const workSamplesPhoto = [
+  {
+    src: "/carina.png",
+    title: "Carina Tower",
+    description: "توسعه داده شده توسط next.js.",
+    btn: true,
+    link: "https://carina-tower.com/",
+  },
+  {
+    src: "/airline.png",
+    title: "airline",
+    description:
+      "یک پنل ساخته شده با استفاده از React.js که برای امور حسابداری آژانس های هواپیمایی می باشد و همچنان در حال توسعه است.",
+    btn: false,
+    link: "",
+  },
+  {
+    src: "/shop.png",
+    title: "Shoping Page",
+    description: "توسعه داده شده توسط js",
+    btn: true,
+    link: "https://jazzy-platypus-b98461.netlify.app/",
+  },
+];

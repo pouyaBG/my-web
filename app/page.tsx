@@ -1,4 +1,5 @@
 import { Introduction, Skill } from "@/components";
+import WorkSamples from "@/components/WorkSamples";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="overflow-hidden">
       <Introduction />
       <Skill />
+      <WorkSamples />
     </main>
   );
 }

@@ -107,3 +107,124 @@ li > span:before {
   padding: 14px;
   border-radius: 6px;
 }
+
+
+.imageBase {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.imageBase .box {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  width: 320px;
+  height: 200px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 45px;
+}
+@media screen and (min-width: 768px) {
+  .imageBase .box {
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 385px;
+    height: 200px;
+  }
+}
+.imageBase:hover .box {
+  transform: rotateY(10deg);
+}
+.imageBase .box:hover ~ .box {
+  transform: rotateY(-10deg);
+}
+.imageBase .box:hover {
+  transform: rotateY(0deg) scale(1.1);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.imageBase .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.imageBase .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(76, 76, 76), #000000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+
+.imageBase .box:hover .imgBx:before {
+  opacity: 1;
+}
+.imageBase .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imageBase .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.imageBase .box .content h2 {
+  color: #fff;
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(150px);
+  transition-delay: 0.2s;
+}
+.imageBase .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.imageBase .box .content p {
+  color: #fff;
+  transition: 0.3s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.imageBase .box:hover .content p {
+  transform: translateY(0px);
+}
+.imageBase .box .content p {
+  color: #fff;
+  transition: 0.3s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.imageBase .box:hover .content p {
+  transform: translateY(0px);
+}
