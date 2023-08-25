@@ -10,16 +10,15 @@ const Navbar = () => {
   console.log(currentRoute);
 
   return (
-    <header className="w-full ">
+    <header className="w-full " data-aos="fade-down">
       <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
         <div className="max-w-screen-[1440px] flex flex-wrap items-center justify-between mx-auto p-4">
           <button
             onClick={() => setIsOpenModal(!iSopneModal)}
             data-collapse-toggle="navbar-dropdown"
             type="button"
-            className={`${
-              iSopneModal ? "-order-1" : ""
-            } inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600`}
+            className={`${iSopneModal ? "-order-1" : ""
+              } inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600`}
             aria-controls="navbar-dropdown"
             aria-expanded="false"
           >
@@ -42,9 +41,8 @@ const Navbar = () => {
           </button>
 
           <div
-            className={` ${
-              iSopneModal ? "" : "hidden"
-            } w-full md:block md:w-auto`}
+            className={` ${iSopneModal ? "" : "hidden"
+              } w-full md:block md:w-auto`}
             id="navbar-dropdown"
           >
             <ul className="flex flex-col font-bold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -52,11 +50,10 @@ const Navbar = () => {
                 <Link
                   onClick={() => setIsOpenModal(false)}
                   href="/"
-                  className={`${
-                    currentRoute === "/"
+                  className={`${currentRoute === "/"
                       ? "text-blue-600 py-2 ml-6 pl-3 pr-4 font-bold  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                       : " py-2 ml-6 pl-3 pr-4 font-bold  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  } py-2 ml-6 pl-3 pr-4 font-bold  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+                    } py-2 ml-6 pl-3 pr-4 font-bold  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                 >
                   صفحه اصلی
                 </Link>
@@ -66,18 +63,17 @@ const Navbar = () => {
                 <Link
                   onClick={() => setIsOpenModal(false)}
                   href="/aboutme"
-                  className={`${
-                    currentRoute === "/aboutme"
+                  className={`${currentRoute === "/aboutme"
                       ? "text-blue-600 block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                       : "block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  }block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+                    }block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                 >
                   درباره من
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/skil"
                   className="block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   مهارت ها
@@ -113,9 +109,8 @@ const Navbar = () => {
                 {/* Dropdown menu */}
                 <div
                   id="dropdownNavbar"
-                  className={`z-10 ${
-                    iSopne ? "" : "hidden"
-                  } absolute shadow-xl border-blue-700 font-normal bg-white divide-y divide-gray-100 rounded-lg  w-44 dark:bg-gray-700 dark:divide-gray-600`}
+                  className={`z-10 ${iSopne ? "" : "hidden"
+                    } absolute shadow-xl border-blue-700 font-normal bg-white divide-y divide-gray-100 rounded-lg  w-44 dark:bg-gray-700 dark:divide-gray-600`}
                 >
                   <ul
                     className="py-2 text-sm text-gray-700 dark:text-gray-400"
