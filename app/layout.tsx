@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
+
 export const metadata: Metadata = {
   title: "Pouya Barari gelyard",
   description: "i am a front end developer and this is my website",
@@ -24,8 +25,8 @@ export default function RootLayout({
     });
   }, []);
   return (
-    <html lang="en" dir="rtl">
-      <body className={"relative"}>
+    <html lang="en" dir="rtl" >
+      <body className={"relative h-fit"}>
         <Navbar />
         {children}
         <Footer />

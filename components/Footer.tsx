@@ -8,7 +8,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
   return (
-    <footer className="w-full flex flex-col text-black-100 mt-5 bg-white">
+    <footer className="w-full  flex flex-col text-black-100 mt-5 bg-white">
       <div className="flex max-md:flex-col-reverse flex-wrap justify-between gap-4 items-center sm:px-16 px-6 py-5">
         <button
           onClick={handlTopScrool}
