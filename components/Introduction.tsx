@@ -1,7 +1,11 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 
 const Introduction = () => {
+  const handlTopScrool = () => {
+    window.scrollTo({ top: 760, left: 0, behavior: "smooth" });
+  };
   return (
     <>
       <div className="introduction" data-aos="zoom-out" data-aos-duration="1500">
@@ -35,7 +39,10 @@ const Introduction = () => {
             یک توسعه دهنده وب سایت که در حال حاضر تمرکزم روی طراحی رابط کاربری یا
             همون <strong className="text__primary">Front-End</strong> است.
           </p>
-          <h2 className="md:text-[20px] text-[14px] hidden md:flex -mt-[5%] md:mt-1 md:mb-2">میتونید در ادامه  رزومه  و نمونه کار های من رو مشاهده کنید &#128515;</h2>
+          <h2 className=" z-10 md:text-[20px] text-[14px] hidden md:flex -mt-[4%] md:mt-5 md:mb-3">میتونید در ادامه  رزومه  و نمونه کار های من رو مشاهده کنید &#128515;</h2>
+          <div onClick={handlTopScrool} className="w-full cursor-pointer">
+            <button onClick={handlTopScrool} className="cursor-pointer xl:text-[19px] xl:px-10 text-[16px] xl:py-2 py-[8px] px-5 bg-[#0A88CE] text-white rounded-[19px] mt-5 hover:shadow-xl bordr-1 hover:scale-105 border-[#0A88CE] transition-all ">مشاهده</button>
+          </div>
         </div>
         <div className="introduction__image-container">
           <div className="introduction__image">
