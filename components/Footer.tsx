@@ -16,7 +16,7 @@ const Footer = () => {
         >
           <>بازگشت به بالا</>
           <Image
-            src={"/arrow-down.svg"}
+            src={"/svg/arrow-down.svg"}
             width={15}
             height={10}
             priority
@@ -33,7 +33,7 @@ const Footer = () => {
             Pouya B.G
           </span>
           <Image
-            src={"/logo.png"}
+            src={"/img/logo.png"}
             alt="logo"
             width={26}
             height={19}

@@ -4,7 +4,7 @@ import Image from "next/image";
 function Skill() {
     return (
         <>
-            <div className="w-full  xl:h-screen mt-16 xl:mt-2 " >
+            <div className="w-full   mt-16 xl:mt-2 " >
                 <div className="flex flex-col xl:flex-row justify-center items-center px-[5rem]  container m-auto ">
                     <div className="flex flex-col md:w-[75%]  items-center xl:mt-24 ">
                         <div className="xl:hidden flex flex-col  items-center ">
