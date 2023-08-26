@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: #2769cb;
 }
 .introduction {
-  @apply flex sm:px-1 px-6 xl:flex-row flex-col gap-8 relative z-0 max-w-[1440px] mx-auto;
+  @apply flex sm:px-1 px-6 xl:flex-row flex-col gap-8 relative max-w-[1440px] mx-auto;
 }
 .introduction__image-container {
   @apply xl:flex-[1.2] flex justify-end items-center w-full xl:h-screen ;
@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb:hover {
   @apply text-[20px]  xl:text-[27px]  font-bold mt-5;
 }
 .introduction__image {
-  @apply relative xl:w-[50%] xl:ml-14 w-[90%] xl:h-full h-[380px] z-0;
+  @apply relative xl:w-[50%] xl:ml-14 w-[90%] xl:h-full h-[380px] ;
 }
 .text__primary {
   @apply text-[#0A88CE];

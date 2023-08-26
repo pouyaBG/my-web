@@ -3,7 +3,7 @@ import { listCV } from "@/constants";
 function Aboutme() {
   return (
     <>
-      <section className="flex-1 mt-[110px]">
+      <section className="flex-1 mt-[140px] mb-10">
         <div className="mt-10 px-4">
           <div className="max-w-screen  mx-auto">
             <div className="cv-timeline-container pl-10 my-8 ">

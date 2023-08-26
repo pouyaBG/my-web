@@ -4,12 +4,9 @@ import WorkSamples from "@/components/WorkSamples";
 import { useEffect } from "react";
 import Aos from "aos";
 export default function Home() {
-  
+
   useEffect(() => {
-    Aos.init({
-      duration: 100,
-      offset: 50,
-    });
+    Aos.init();
   }, []);
   return (
     <main className="overflow-hidden">

@@ -10,7 +10,7 @@ const Navbar = () => {
   console.log(currentRoute);
 
   return (
-    <header className="w-full" data-aos="fade-down">
+    <header className="w-full z-50" data-aos="fade-down">
       <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
         <div className="max-w-screen-[1440px] flex flex-wrap items-center justify-between mx-auto p-4">
           <button
@@ -41,7 +41,7 @@ const Navbar = () => {
           </button>
 
           <div
-            className={` ${iSopneModal ? "" : "hidden"
+            className={`z-50 ${iSopneModal ? "" : "hidden"
               } w-full md:block md:w-auto`}
             id="navbar-dropdown"
           >
@@ -73,8 +73,12 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => setIsOpenModal(false)}
                   href="/RadarSkill"
-                  className="block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className={`${currentRoute === "/RadarSkill"
+                    ? "text-blue-600 block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    : "block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    }block py-2 pl-3 pr-4 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                 >
                   مهارت ها
                 </Link>
@@ -109,7 +113,7 @@ const Navbar = () => {
                 {/* Dropdown menu */}
                 <div
                   id="dropdownNavbar"
-                  className={`z-10 ${iSopne ? "" : "hidden"
+                  className={` z-50 ${iSopne ? "" : "hidden"
                     } absolute shadow-xl border-blue-700 font-normal bg-white divide-y divide-gray-100 rounded-lg  w-44 dark:bg-gray-700 dark:divide-gray-600`}
                 >
                   <ul
