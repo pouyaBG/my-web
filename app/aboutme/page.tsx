@@ -1,4 +1,4 @@
-import { listCV } from "@/public/svg";
+import { listCV } from "@/constants";
 
 function Aboutme() {
   return (

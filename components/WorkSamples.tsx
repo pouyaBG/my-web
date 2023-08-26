@@ -1,4 +1,4 @@
-import { workSamplesPhoto } from "@/public/svg";
+import { workSamplesPhoto } from "@/constants";
 
 function WorkSamples() {
 
