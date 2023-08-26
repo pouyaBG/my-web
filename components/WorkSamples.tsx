@@ -1,11 +1,11 @@
-import { workSamplesPhoto } from "@/constants";
+import { workSamplesPhoto } from "@/public/svg";
 
 function WorkSamples() {
 
   return (
     <>
       <div className=" h-full container m-auto">
-        <h2  data-aos="flip-up" data-aos-duration="200" className="xl:text-[30px] text-[20px]  m-auto w-full text-center font-[700]  mt-16">توسعه داده شده توسط من</h2>
+        <h2 data-aos="flip-up" data-aos-duration="200" className="xl:text-[30px] text-[20px]  m-auto w-full text-center font-[700]  mt-16">توسعه داده شده توسط من</h2>
 
         <div className="w-full h-full flex flex-col xl:flex-row justify-center items-center m-auto p-5 mb-10">
           <div className="flex flex-col justify-center">

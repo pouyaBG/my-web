@@ -1,4 +1,4 @@
-import { listSkillLeft, listSkillRight, pathSvgLeft, pathSvgRight } from "@/constants";
+import { listSkillLeft, listSkillRight, pathSvgLeft, pathSvgRight } from "@/public/svg";
 import Image from "next/image";
 
 function Skill() {

@@ -2,26 +2,26 @@ export const listSkillRight = [
   {
     titel: "JavaScript",
     color: "#FFC900",
-    svg: "/js.svg",
+    svg: "./js.svg",
     description: "مهارت کافی در استفاده از زبان جاوااسکریپت.",
   },
   {
     titel: "React.js",
     color: "#2CCBDF",
-    svg: "/react.svg",
+    svg: "./react.svg",
     description:
       "ایجاد اپلیکیشن با استفاده از کتابخانه  react.js.با اجزای کاربردی قابل استفاده مجدد، قابل نگهداری و مدیریت.",
   },
   {
     titel: "Next.js",
     color: "#000",
-    svg: "/next.svg",
+    svg: "./next.svg",
     description: "ایجاد یک وبسایت با استفاده از next.js.",
   },
   {
     titel: "TypeScript",
     color: "#083982",
-    svg: "/type.svg",
+    svg: "./type.svg",
     description: "استفاده از تایپ اسکریپت برای جلوگیری از خطاهای منطقی برنامه.",
   },
 ];
@@ -29,35 +29,35 @@ export const listSkillLeft = [
   {
     titel: "Tailwind",
     color: "#00ACC1",
-    svg: "/tail.svg",
+    svg: "./tail.svg",
     description:
       "استفاده از تیلویند برای بهبود استایل برنامه و ریسپانسیو بهتر.",
   },
   {
     titel: "Git",
     color: "#F48218",
-    svg: "/git.svg",
+    svg: "./git.svg",
     description:
       "استفاده از گیت و گیت هاب برای نگهداری کد ها ، کامیت گذاری درست.",
   },
   {
     titel: "Sass",
     color: "#F06292",
-    svg: "/sass.svg",
+    svg: "./sass.svg",
     description: "استفاده از پیش پردازنده sass برای بهنیه بودن کد های css خام.",
   },
   {
     titel: "REST API",
     color: "#000",
-    svg: "/ra.svg",
+    svg: "./ra.svg",
     description: ">استفاده از api در برنامه.",
   },
 ];
 export const pathSvgRight = [
-  { src: "/jsP.svg", leftP: "49%" },
-  { src: "/reP.svg", leftP: "49%" },
-  { src: "/neP.svg", leftP: "48%" },
-  { src: "/teP.svg", leftP: "49%" },
+  { src: "./jsP.svg", leftP: "49%" },
+  { src: "./reP.svg", leftP: "49%" },
+  { src: "./neP.svg", leftP: "48%" },
+  { src: "./teP.svg", leftP: "49%" },
 ];
 export const pathSvgLeft = [
   { src: "/taP.svg", rightP: "49" },
@@ -96,14 +96,14 @@ export const listCV = [
 
 export const workSamplesPhoto = [
   {
-    src: "/carina.png",
+    src: "./carina.png",
     title: "Carina Tower",
     description: "توسعه داده شده توسط next.js.",
     btn: true,
     link: "https://carina-tower.com/",
   },
   {
-    src: "/airline.png",
+    src: "./airline.png",
     title: "airline",
     description:
       "یک پنل ساخته شده با استفاده از React.js که برای امور حسابداری آژانس های هواپیمایی می باشد و همچنان در حال توسعه است.",
@@ -111,7 +111,7 @@ export const workSamplesPhoto = [
     link: "",
   },
   {
-    src: "/shop.png",
+    src: "./shop.png",
     title: "Shoping Page",
     description: "توسعه داده شده توسط js",
     btn: true,
