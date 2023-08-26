@@ -7,8 +7,8 @@ export default function Home() {
   
   useEffect(() => {
     Aos.init({
-      duration: 200,
-      offset: 100,
+      duration: 100,
+      offset: 50,
     });
   }, []);
   return (

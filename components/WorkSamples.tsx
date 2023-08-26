@@ -32,8 +32,8 @@ function WorkSamples() {
             </div>
           </div>
         </div>
-        <div className="w-full m-auto mt-10 flex justify-center items-center">
-          <button className="xl:text-[19px]   xl:px-10 xl:py-3 p-2 px-5 bg-[#0A88CE] text-white rounded-[19px] mt-5 hover:shadow-xl bordr-1 hover:scale-105 border-[#0A88CE] transition-all">جزئیات بیشتر</button>
+        <div className="w-full m-auto mt-10 flex justify-center items-center mb-5">
+          <button className="xl:text-[19px] xl:px-10 xl:py-3 p-2 px-5 bg-[#0A88CE] text-white rounded-[19px] mt-5 hover:shadow-xl bordr-1 hover:scale-105 border-[#0A88CE] transition-all">جزئیات بیشتر</button>
         </div>
       </div>
       {/* <div  data-aos="fade-right" data-aos-duration="1200" className="w-screen h-8` bg-[#0A88CE] mt-[10%] md:mt-[5%]">

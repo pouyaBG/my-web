@@ -8,8 +8,8 @@ const Footer = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
   return (
-    <footer className="w-full  flex flex-col text-black-100 mt-5 bg-white">
-      <div className="flex max-md:flex-col-reverse flex-wrap justify-between gap-4 items-center sm:px-16 px-6 py-5">
+    <footer   className="w-full  flex flex-col text-black-100 mt-5 bg-white">
+      <div className="flex max-md:flex-col-reverse flex-wrap justify-between gap-4 items-center sm:px-16 px-6 py-2">
         <button
           onClick={handlTopScrool}
           className="flex justify-between items-center border rounded-md p-2"
@@ -24,7 +24,7 @@ const Footer = () => {
             className="object-contain rotate-180 mr-1"
           />
         </button>
-        <p className="text-base whitespace-nowrap text-gray-700">
+        <p className="text-base font-medium whitespace-nowrap text-gray-800">
           تمام حقوق اين وب‌سايت متعلق به پویا براری گلیرد است. &copy;
         </p>
 
