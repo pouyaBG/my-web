@@ -1,6 +1,32 @@
-import { listCV } from "@/constants";
+
 
 function Aboutme() {
+  const listCV = [
+    {
+      title: "FrontEnd developer",
+      jobPosition: "Front-end team in Hyponet",
+      description:
+        "ابتدا به عنوان کار آموز در این مجموعه مشغول به کار شدم و بعد از گذراندن دوره کارآموزی به عنوان یکی از اعضای تیم فرانت اند بر روی پروژه های مختلفی کار کردم.",
+      yrS: "1400",
+      yrE: "1402",
+    },
+    {
+      title: "computer engineer",
+      jobPosition: "Student in shomal university",
+      description:
+        "در رشته مهندسی کامپیوتر گرایش نرم افزار شروع به تحصیل کردم و همچنان مشغول  به تحصیل هستم.",
+      yrS: "1399",
+      yrE: "1402",
+    },
+    {
+      title: "FrontEnd developer",
+      jobPosition: "Freelancer",
+      description:
+        "به صورت فریلنسری پروژه های کوچک را برای به دست آوردن تجربه و مهارت انجام میدادم.",
+      yrS: "1398",
+      yrE: "1399",
+    },
+  ];
   return (
     <>
       <section className="flex-1 mt-[140px] mb-10">

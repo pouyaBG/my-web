@@ -1,6 +1,29 @@
-import { workSamplesPhoto } from "@/constants";
-
 function WorkSamples() {
+
+  const workSamplesPhoto = [
+    {
+      src: "./img/carina.png",
+      title: "Carina Tower",
+      description: "توسعه داده شده توسط next.js.",
+      btn: true,
+      link: "https://carina-tower.com/",
+    },
+    {
+      src: "./img/airline.png",
+      title: "airline",
+      description:
+        "یک پنل ساخته شده با استفاده از React.js که برای امور حسابداری آژانس های هواپیمایی می باشد و همچنان در حال توسعه است.",
+      btn: false,
+      link: "",
+    },
+    {
+      src: "./img/shop.png",
+      title: "Shoping Page",
+      description: "توسعه داده شده توسط js",
+      btn: true,
+      link: "https://jazzy-platypus-b98461.netlify.app/",
+    },
+  ];
 
   return (
     <>
