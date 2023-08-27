@@ -47,7 +47,7 @@ const Introduction = () => {
         <div className="introduction__image-container">
           <div className="introduction__image">
             <Image
-              src="/my1.png"
+              src={"/my1.png"}
               alt="introduction"
               fill
               className="object-contain"
