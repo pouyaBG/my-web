@@ -228,3 +228,10 @@ li > span:before {
 .imageBase .box:hover .content p {
   transform: translateY(0px);
 }
+
+.mainContainter {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

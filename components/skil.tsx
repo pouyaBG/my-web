@@ -76,13 +76,11 @@ function Skill() {
                         <div className="xl:hidden flex flex-col  items-center ">
                             <h2 className="mb-16 text-[20px]  font-[700]">مهارت های من</h2>
                         </div>
-
                         {pathSvgRight.map((item, id) => (
                             <div data-aos="zoom-in" data-aos-duration="1200" key={id} className={`hidden xl:flex absolute left-[49%]`}>
                                 <img src={item.src}></img>
                             </div>
                         ))}
-
                         {listSkillRight.map((item, id) => (
                             <div data-aos="zoom-in" data-aos-duration="1500" style={{ borderColor: item.color }} key={id} className={`cv-timeline-container flex  flex-col w-full mb-5 border-2 p-3 rounded-[19px]  border-opacity-25 cursor-pointer hover:shadow-xl transition-all hover:bg-white hover:scale-105`}>
                                 <div className="flex  items-center w-full">
@@ -92,17 +90,13 @@ function Skill() {
                                 <p className="text-[16px]">{item.description}</p>
                             </div>
                         ))}
-                    </div>
-
-
+                    </div>  
                     <div data-aos="zoom-in" data-aos-duration="500" className="hidden xl:flex flex-col  items-center z-50">
                         <h2 className="mb-16 text-[20px] xl:text-[30px] font-[700]">مهارت های من</h2>
                         <div className="w-[39%] mt-5 ">
                             <Image src="/my2.png" width={1550} height={800} alt="myimage"></Image>
                         </div>
                     </div>
-
-
                     <div className="flex flex-col md:w-[75%]  items-center mt-[8%]" >
 
                         {pathSvgLeft.map((item, id) => (
@@ -110,8 +104,6 @@ function Skill() {
                                 <img src={item.src}></img>
                             </div>
                         ))}
-
-
                         {listSkillLeft.map((item, id) => (
                             <div data-aos="zoom-in" data-aos-duration="1500" style={{ borderColor: item.color }} key={id} className={`flex flex-col w-full  mb-5 border-2 p-3 rounded-[19px] border-[${item.color}] border-opacity-25 cursor-pointer hover:shadow-xl transition-all hover:bg-white hover:scale-105`}>
                                 <div className="flex  items-center w-full">
