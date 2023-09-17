@@ -5,6 +5,9 @@ const nextConfig = {
       {
         hostname: "pouya-barari-g.iran.liara.run",
       },
+      {
+        hostname: "pouya-bararig.ir",
+      },
     ],
   },
 };
