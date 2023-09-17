@@ -94,7 +94,7 @@ function Skill() {
                     <div data-aos="zoom-in" data-aos-duration="500" className="hidden xl:flex flex-col  items-center z-50">
                         <h2 className="mb-16 text-[20px] xl:text-[30px] font-[700]">مهارت های من</h2>
                         <div className="w-[39%] mt-5 ">
-                            <Image src="/my2.png" width={1550} height={800} alt="myimage"></Image>
+                            <img src="/img/my2.png" width={1550} height={800} alt="myimage"></img>
                         </div>
                     </div>
                     <div className="flex flex-col md:w-[75%]  items-center mt-[8%]" >

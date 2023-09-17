@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb:hover {
   @apply text-[20px]  xl:text-[27px]  font-bold mt-5;
 }
 .introduction__image {
-  @apply relative xl:w-[50%] xl:ml-14 w-[90%] xl:h-full h-[380px] ;
+  @apply relative xl:w-[50%] xl:ml-14 w-[50%] xl:h-full h-[380px] m-auto ;
 }
 .text__primary {
   @apply text-[#0A88CE];

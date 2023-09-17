@@ -183,12 +183,10 @@ const Navbar = () => {
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               Pouya B.G
             </span>
-            <Image
-              src={"/logo.png"}
+            <img
+              src={"/img/logo.png"}
               alt="logo"
-              width={39}
-              height={19}
-              className="object-contain mr-3"
+              className="object-contain mr-3 w-[50px] h-[40px]"
             />
           </Link>
         </div>
